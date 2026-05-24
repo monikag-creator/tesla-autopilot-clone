@@ -1,0 +1,22 @@
+# dataset/data.yaml
+# YOLO-format dataset configuration for Tesla Autopilot Clone
+# Replace 'path' with the absolute path to your dataset folder.
+
+path: ./dataset          # root dataset directory
+train: images/train      # relative to 'path'
+val:   images/val        # relative to 'path'
+
+# Number of classes
+nc: 9
+
+# Class names (must match COCO IDs used in detect.py)
+names:
+  0: person
+  1: bicycle
+  2: car
+  3: motorcycle
+  4: bus
+  5: truck
+  6: traffic light
+  7: stop sign
+  8: parking meter
