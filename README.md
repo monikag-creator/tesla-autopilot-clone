@@ -1,4 +1,4 @@
-# 🚗 Tesla Autopilot Clone — Object Detection
+# Tesla Autopilot Clone — Object Detection
 
 **GUVI AIML Course Project | Monika**
 
@@ -6,7 +6,7 @@ A Python-based autonomous driving object detection system inspired by Tesla Auto
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project implements an end-to-end object detection pipeline that:
 
@@ -19,7 +19,7 @@ This project implements an end-to-end object detection pipeline that:
 
 ---
 
-## 🧠 Model Selection — Why YOLOv8?
+## Model Selection — Why YOLOv8?
 
 | Model | Speed | Accuracy | Notes |
 |-------|-------|----------|-------|
@@ -32,7 +32,7 @@ This project implements an end-to-end object detection pipeline that:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 tesla_autopilot_clone/
@@ -55,7 +55,7 @@ tesla_autopilot_clone/
 
 ---
 
-## 🗂️ Dataset Details
+## Dataset Details
 
 The project uses **COCO 2017** (pre-trained) and can be fine-tuned on any custom driving dataset.
 
@@ -80,7 +80,7 @@ The project uses **COCO 2017** (pre-trained) and can be fine-tuned on any custom
 
 ---
 
-## ⚙️ Preprocessing Steps
+## Preprocessing Steps
 
 1. **Resize** all frames to 640×640 (YOLOv8 default input size)
 2. **Normalize** pixel values to [0, 1] (done internally by ultralytics)
@@ -92,7 +92,7 @@ The project uses **COCO 2017** (pre-trained) and can be fine-tuned on any custom
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 - Python 3.9+
@@ -117,7 +117,7 @@ YOLOv8 weights (`yolov8n.pt`) are **downloaded automatically** on first run.
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### 1. Detect on an image
 ```bash
@@ -149,7 +149,7 @@ All annotated outputs are saved to the `output/` folder.
 
 ---
 
-## 📊 Results & Metrics
+## Results & Metrics
 
 > *(Results below are representative; run `evaluate.py` on your dataset to get actual numbers.)*
 
@@ -168,7 +168,7 @@ Bounding boxes are colour-coded by class with confidence scores displayed. A HUD
 
 ---
 
-## 🚧 Challenges & Improvements
+## Challenges & Improvements
 
 **Challenges faced:**
 - Small object detection (distant pedestrians, far-away traffic lights) reduces recall
@@ -184,13 +184,13 @@ Bounding boxes are colour-coded by class with confidence scores displayed. A HUD
 
 ---
 
-## 📄 License
+## License
 
 This project is for educational purposes as part of the GUVI AIML course.
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
 - [COCO Dataset](https://cocodataset.org/)
